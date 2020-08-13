@@ -6,7 +6,7 @@
     <div class="container">
         <h1 class="text-center">Add Video</h1>
         <hr>
-        @include('dashboard.flash')
+        @include('includes.flash')
         <div class="card">
             <div class="card-body">
                 <form action="{{ route('dashboard.videos.store') }}" method="POST" enctype="multipart/form-data">

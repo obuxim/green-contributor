@@ -6,7 +6,7 @@
     <div class="container">
         <h1 class="text-center">List Sliders</h1>
         <hr>
-        @include('dashboard.flash')
+        @include('includes.flash')
         @if(count($sliders) == 0)
             <div class="card">
                 <div class="card-header">No Sliders Found</div>

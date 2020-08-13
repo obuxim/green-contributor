@@ -6,9 +6,11 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-header">
-                        <h1>Login</h1>
+                        <h3>Login</h3>
                     </div>
                     <div class="card-body">
+                        @include('includes.flash')
+
                         <form action="{{ route('login') }}" method="POST">
                             @csrf
                             <div class="form-group">
@@ -20,7 +22,8 @@
                                 <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password.">
                             </div>
                             <div class="form-group">
-
+                                <button type="submit" class="btn btn-success">Login</button>
+                                <a href="{{ route('password.request') }}" class="btn btn-warning">Reset Password</a>
                             </div>
                         </form>
                     </div>

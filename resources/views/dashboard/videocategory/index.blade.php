@@ -6,7 +6,7 @@
     <div class="container">
         <h1 class="text-center">List Video Categories</h1>
         <hr>
-        @include('dashboard.flash')
+        @include('includes.flash')
         @if(count($videocategories) == 0)
             <div class="card">
                 <div class="card-header">No Video Category Found</div>
